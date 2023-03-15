@@ -1,0 +1,29 @@
+{
+  "products" : [
+    {
+      "displayPrice" : "7.99",
+      "familyShareable" : false,
+      "internalID" : "804A06DE",
+      "localizations" : [
+        {
+          "description" : "Unlock all features (test mode)",
+          "displayName" : "Go Premium",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "premium",
+      "referenceName" : "Go Premium",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 1,
+    "minor" : 0
+  }
+}

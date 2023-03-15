@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		790D146C2512698B00BAA12B /* SoundsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790D146B2512698B00BAA12B /* SoundsContentView.swift */; };
+		790D146E25126B9700BAA12B /* RelaxContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790D146D25126B9700BAA12B /* RelaxContentView.swift */; };
+		790D147025126FF100BAA12B /* PlaylistContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790D146F25126FF100BAA12B /* PlaylistContentView.swift */; };
+		795DEC0B2516D01800C54F78 /* Apps4World.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 795DEC092516D01300C54F78 /* Apps4World.xcframework */; };
+		795DEC0C2516D01800C54F78 /* Apps4World.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 795DEC092516D01300C54F78 /* Apps4World.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7968B5AC2513A8A100BF697B /* Fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7968B5A82513A8A100BF697B /* Fire.mp3 */; };
+		7968B5AD2513A8A100BF697B /* Rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7968B5A92513A8A100BF697B /* Rain.mp3 */; };
+		7968B5AE2513A8A100BF697B /* Ocean.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7968B5AA2513A8A100BF697B /* Ocean.mp3 */; };
+		7968B5AF2513A8A100BF697B /* Birds.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7968B5AB2513A8A100BF697B /* Birds.mp3 */; };
+		7968B5B22513A8C000BF697B /* Relaxing Sleep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7968B5B12513A8C000BF697B /* Relaxing Sleep.mp3 */; };
+		7968B5EF2514FC8600BF697B /* FullScreenAds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7968B5EE2514FC8600BF697B /* FullScreenAds.swift */; };
+		7968B604251505F000BF697B /* PKDarkThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7968B603251505F000BF697B /* PKDarkThemeView.swift */; };
+		7968B607251513DB00BF697B /* MoreContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7968B606251513DB00BF697B /* MoreContentView.swift */; };
+		796DABE725153B9100528250 /* Peaceful Night.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 796DABE525153B9100528250 /* Peaceful Night.mp3 */; };
+		796DABE825153B9100528250 /* Yoga relaxation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 796DABE625153B9100528250 /* Yoga relaxation.mp3 */; };
+		796DABEC25153C0200528250 /* Relaxing Focus Music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 796DABEA25153C0200528250 /* Relaxing Focus Music.mp3 */; };
+		796DABED25153C0200528250 /* Immediate focus.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 796DABEB25153C0200528250 /* Immediate focus.mp3 */; };
+		796DABF125153CA200528250 /* Yoga Zen Oasis.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 796DABEF25153CA200528250 /* Yoga Zen Oasis.mp3 */; };
+		796DABF225153CA200528250 /* Zen Spa music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 796DABF025153CA200528250 /* Zen Spa music.mp3 */; };
+		796DABF625153DDB00528250 /* Summer Chill Electro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 796DABF425153DDB00528250 /* Summer Chill Electro.mp3 */; };
+		796DABF725153DDB00528250 /* Uplifting Piano.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 796DABF525153DDB00528250 /* Uplifting Piano.mp3 */; };
+		796DABFA25153EAC00528250 /* Focus Meditation - No words.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 796DABF925153EAC00528250 /* Focus Meditation - No words.mp3 */; };
+		796DABFD25153F0700528250 /* Guided Focus Meditation - Male.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 796DABFC25153F0700528250 /* Guided Focus Meditation - Male.mp3 */; };
+		796DAC05251548E200528250 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 796DAC04251548E200528250 /* StoreKit.framework */; };
+		796DAC0825154D1A00528250 /* AppPurchase.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 796DAC0725154D1A00528250 /* AppPurchase.storekit */; };
+		797D4EF32510FE0700B74791 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D4EF22510FE0700B74791 /* AppDelegate.swift */; };
+		797D4EF52510FE0700B74791 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D4EF42510FE0700B74791 /* SceneDelegate.swift */; };
+		797D4EF72510FE0700B74791 /* DashboardContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D4EF62510FE0700B74791 /* DashboardContentView.swift */; };
+		797D4EF92510FE0A00B74791 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 797D4EF82510FE0A00B74791 /* Assets.xcassets */; };
+		797D4EFC2510FE0A00B74791 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 797D4EFB2510FE0A00B74791 /* Preview Assets.xcassets */; };
+		797D4EFF2510FE0A00B74791 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 797D4EFD2510FE0A00B74791 /* LaunchScreen.storyboard */; };
+		797D4F0D2511176F00B74791 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D4F0C2511176F00B74791 /* AppConfig.swift */; };
+		797D4F0F2511182900B74791 /* MeditationCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D4F0E2511182900B74791 /* MeditationCategoryView.swift */; };
+		797D4F1125115E8600B74791 /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D4F1025115E8600B74791 /* CustomTabBarView.swift */; };
+		797D4F162511771500B74791 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D4F152511771500B74791 /* AppManager.swift */; };
+		797D4F19251177F600B74791 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D4F18251177F600B74791 /* AppViewModel.swift */; };
+		90E4A251BFDC24E6142C45F4 /* Pods_Calmish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A548E2649ED9A5C0BA479AB /* Pods_Calmish.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		795DEC082516CF0500C54F78 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				795DEC0C2516D01800C54F78 /* Apps4World.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6440850AD4C4E9D78AA83F33 /* Pods-Calmish.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calmish.release.xcconfig"; path = "Target Support Files/Pods-Calmish/Pods-Calmish.release.xcconfig"; sourceTree = "<group>"; };
+		790D146B2512698B00BAA12B /* SoundsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsContentView.swift; sourceTree = "<group>"; };
+		790D146D25126B9700BAA12B /* RelaxContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelaxContentView.swift; sourceTree = "<group>"; };
+		790D146F25126FF100BAA12B /* PlaylistContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistContentView.swift; sourceTree = "<group>"; };
+		795DEC092516D01300C54F78 /* Apps4World.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Apps4World.xcframework; sourceTree = "<group>"; };
+		7968B5A82513A8A100BF697B /* Fire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Fire.mp3; sourceTree = "<group>"; };
+		7968B5A92513A8A100BF697B /* Rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Rain.mp3; sourceTree = "<group>"; };
+		7968B5AA2513A8A100BF697B /* Ocean.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ocean.mp3; sourceTree = "<group>"; };
+		7968B5AB2513A8A100BF697B /* Birds.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Birds.mp3; sourceTree = "<group>"; };
+		7968B5B12513A8C000BF697B /* Relaxing Sleep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Relaxing Sleep.mp3"; sourceTree = "<group>"; };
+		7968B5EE2514FC8600BF697B /* FullScreenAds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenAds.swift; sourceTree = "<group>"; };
+		7968B603251505F000BF697B /* PKDarkThemeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKDarkThemeView.swift; sourceTree = "<group>"; };
+		7968B606251513DB00BF697B /* MoreContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreContentView.swift; sourceTree = "<group>"; };
+		796DABE525153B9100528250 /* Peaceful Night.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Peaceful Night.mp3"; sourceTree = "<group>"; };
+		796DABE625153B9100528250 /* Yoga relaxation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Yoga relaxation.mp3"; sourceTree = "<group>"; };
+		796DABEA25153C0200528250 /* Relaxing Focus Music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Relaxing Focus Music.mp3"; sourceTree = "<group>"; };
+		796DABEB25153C0200528250 /* Immediate focus.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Immediate focus.mp3"; sourceTree = "<group>"; };
+		796DABEF25153CA200528250 /* Yoga Zen Oasis.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Yoga Zen Oasis.mp3"; sourceTree = "<group>"; };
+		796DABF025153CA200528250 /* Zen Spa music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Zen Spa music.mp3"; sourceTree = "<group>"; };
+		796DABF425153DDB00528250 /* Summer Chill Electro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Summer Chill Electro.mp3"; sourceTree = "<group>"; };
+		796DABF525153DDB00528250 /* Uplifting Piano.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Uplifting Piano.mp3"; sourceTree = "<group>"; };
+		796DABF925153EAC00528250 /* Focus Meditation - No words.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Focus Meditation - No words.mp3"; sourceTree = "<group>"; };
+		796DABFC25153F0700528250 /* Guided Focus Meditation - Male.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Guided Focus Meditation - Male.mp3"; sourceTree = "<group>"; };
+		796DAC04251548E200528250 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		796DAC0725154D1A00528250 /* AppPurchase.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = AppPurchase.storekit; sourceTree = "<group>"; };
+		797D4EEF2510FE0700B74791 /* Calmish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calmish.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		797D4EF22510FE0700B74791 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		797D4EF42510FE0700B74791 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		797D4EF62510FE0700B74791 /* DashboardContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardContentView.swift; sourceTree = "<group>"; };
+		797D4EF82510FE0A00B74791 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		797D4EFB2510FE0A00B74791 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		797D4EFE2510FE0A00B74791 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		797D4F002510FE0A00B74791 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		797D4F0C2511176F00B74791 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		797D4F0E2511182900B74791 /* MeditationCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationCategoryView.swift; sourceTree = "<group>"; };
+		797D4F1025115E8600B74791 /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
+		797D4F152511771500B74791 /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		797D4F18251177F600B74791 /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		7A548E2649ED9A5C0BA479AB /* Pods_Calmish.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Calmish.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E21AD26298D4AF5C35B6B498 /* Pods-Calmish.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calmish.debug.xcconfig"; path = "Target Support Files/Pods-Calmish/Pods-Calmish.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		797D4EEC2510FE0700B74791 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90E4A251BFDC24E6142C45F4 /* Pods_Calmish.framework in Frameworks */,
+				796DAC05251548E200528250 /* StoreKit.framework in Frameworks */,
+				795DEC0B2516D01800C54F78 /* Apps4World.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6281C4515511D0E731136800 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E21AD26298D4AF5C35B6B498 /* Pods-Calmish.debug.xcconfig */,
+				6440850AD4C4E9D78AA83F33 /* Pods-Calmish.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7968B5A62513A87200BF697B /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				796DABF425153DDB00528250 /* Summer Chill Electro.mp3 */,
+				796DABF525153DDB00528250 /* Uplifting Piano.mp3 */,
+				796DABEF25153CA200528250 /* Yoga Zen Oasis.mp3 */,
+				796DABF025153CA200528250 /* Zen Spa music.mp3 */,
+				796DABEB25153C0200528250 /* Immediate focus.mp3 */,
+				796DABEA25153C0200528250 /* Relaxing Focus Music.mp3 */,
+				796DABE525153B9100528250 /* Peaceful Night.mp3 */,
+				796DABE625153B9100528250 /* Yoga relaxation.mp3 */,
+				7968B5B12513A8C000BF697B /* Relaxing Sleep.mp3 */,
+				7968B5AB2513A8A100BF697B /* Birds.mp3 */,
+				7968B5A82513A8A100BF697B /* Fire.mp3 */,
+				7968B5A92513A8A100BF697B /* Rain.mp3 */,
+				7968B5AA2513A8A100BF697B /* Ocean.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		7968B5A72513A88500BF697B /* Meditation */ = {
+			isa = PBXGroup;
+			children = (
+				796DABFC25153F0700528250 /* Guided Focus Meditation - Male.mp3 */,
+				796DABF925153EAC00528250 /* Focus Meditation - No words.mp3 */,
+			);
+			path = Meditation;
+			sourceTree = "<group>";
+		};
+		797D4EE62510FE0700B74791 = {
+			isa = PBXGroup;
+			children = (
+				797D4EF12510FE0700B74791 /* Calmish */,
+				797D4EF02510FE0700B74791 /* Products */,
+				6281C4515511D0E731136800 /* Pods */,
+				F314373B53BE912877C33878 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		797D4EF02510FE0700B74791 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				797D4EEF2510FE0700B74791 /* Calmish.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		797D4EF12510FE0700B74791 /* Calmish */ = {
+			isa = PBXGroup;
+			children = (
+				797D4F0B2510FE6D00B74791 /* Views */,
+				797D4F072510FE3600B74791 /* ContentViews */,
+				797D4F062510FE2B00B74791 /* AppDelegate */,
+				797D4F082510FE4000B74791 /* Storyboards */,
+				797D4F0A2510FE5C00B74791 /* PlaylistItems */,
+				797D4EF82510FE0A00B74791 /* Assets.xcassets */,
+				797D4F002510FE0A00B74791 /* Info.plist */,
+				797D4EFA2510FE0A00B74791 /* Preview Content */,
+			);
+			path = Calmish;
+			sourceTree = "<group>";
+		};
+		797D4EFA2510FE0A00B74791 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				797D4EFB2510FE0A00B74791 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		797D4F062510FE2B00B74791 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				797D4F0C2511176F00B74791 /* AppConfig.swift */,
+				797D4F152511771500B74791 /* AppManager.swift */,
+				797D4EF22510FE0700B74791 /* AppDelegate.swift */,
+				797D4EF42510FE0700B74791 /* SceneDelegate.swift */,
+				797D4F18251177F600B74791 /* AppViewModel.swift */,
+				796DAC0725154D1A00528250 /* AppPurchase.storekit */,
+				795DEC092516D01300C54F78 /* Apps4World.xcframework */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		797D4F072510FE3600B74791 /* ContentViews */ = {
+			isa = PBXGroup;
+			children = (
+				797D4EF62510FE0700B74791 /* DashboardContentView.swift */,
+				790D146B2512698B00BAA12B /* SoundsContentView.swift */,
+				790D146D25126B9700BAA12B /* RelaxContentView.swift */,
+				790D146F25126FF100BAA12B /* PlaylistContentView.swift */,
+				7968B606251513DB00BF697B /* MoreContentView.swift */,
+			);
+			path = ContentViews;
+			sourceTree = "<group>";
+		};
+		797D4F082510FE4000B74791 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				797D4EFD2510FE0A00B74791 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		797D4F0A2510FE5C00B74791 /* PlaylistItems */ = {
+			isa = PBXGroup;
+			children = (
+				7968B5A72513A88500BF697B /* Meditation */,
+				7968B5A62513A87200BF697B /* Sounds */,
+			);
+			path = PlaylistItems;
+			sourceTree = "<group>";
+		};
+		797D4F0B2510FE6D00B74791 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7968B603251505F000BF697B /* PKDarkThemeView.swift */,
+				797D4F0E2511182900B74791 /* MeditationCategoryView.swift */,
+				797D4F1025115E8600B74791 /* CustomTabBarView.swift */,
+				7968B5EE2514FC8600BF697B /* FullScreenAds.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F314373B53BE912877C33878 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				796DAC04251548E200528250 /* StoreKit.framework */,
+				7A548E2649ED9A5C0BA479AB /* Pods_Calmish.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		797D4EEE2510FE0700B74791 /* Calmish */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 797D4F032510FE0A00B74791 /* Build configuration list for PBXNativeTarget "Calmish" */;
+			buildPhases = (
+				B2E238320EFFAEC2B92AFB52 /* [CP] Check Pods Manifest.lock */,
+				797D4EEB2510FE0700B74791 /* Sources */,
+				797D4EEC2510FE0700B74791 /* Frameworks */,
+				797D4EED2510FE0700B74791 /* Resources */,
+				6A473BAAC384458B81AD0E5A /* [CP] Embed Pods Frameworks */,
+				795DEC082516CF0500C54F78 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Calmish;
+			productName = Calmish;
+			productReference = 797D4EEF2510FE0700B74791 /* Calmish.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		797D4EE72510FE0700B74791 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1200;
+				ORGANIZATIONNAME = Apps4World;
+				TargetAttributes = {
+					797D4EEE2510FE0700B74791 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = 797D4EEA2510FE0700B74791 /* Build configuration list for PBXProject "Calmish" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 797D4EE62510FE0700B74791;
+			productRefGroup = 797D4EF02510FE0700B74791 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				797D4EEE2510FE0700B74791 /* Calmish */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		797D4EED2510FE0700B74791 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				796DABF625153DDB00528250 /* Summer Chill Electro.mp3 in Resources */,
+				796DABED25153C0200528250 /* Immediate focus.mp3 in Resources */,
+				7968B5AC2513A8A100BF697B /* Fire.mp3 in Resources */,
+				796DABF125153CA200528250 /* Yoga Zen Oasis.mp3 in Resources */,
+				797D4EFF2510FE0A00B74791 /* LaunchScreen.storyboard in Resources */,
+				796DABE825153B9100528250 /* Yoga relaxation.mp3 in Resources */,
+				796DABEC25153C0200528250 /* Relaxing Focus Music.mp3 in Resources */,
+				7968B5AD2513A8A100BF697B /* Rain.mp3 in Resources */,
+				796DABE725153B9100528250 /* Peaceful Night.mp3 in Resources */,
+				7968B5B22513A8C000BF697B /* Relaxing Sleep.mp3 in Resources */,
+				796DABF725153DDB00528250 /* Uplifting Piano.mp3 in Resources */,
+				796DABFA25153EAC00528250 /* Focus Meditation - No words.mp3 in Resources */,
+				796DABFD25153F0700528250 /* Guided Focus Meditation - Male.mp3 in Resources */,
+				7968B5AE2513A8A100BF697B /* Ocean.mp3 in Resources */,
+				7968B5AF2513A8A100BF697B /* Birds.mp3 in Resources */,
+				796DABF225153CA200528250 /* Zen Spa music.mp3 in Resources */,
+				797D4EFC2510FE0A00B74791 /* Preview Assets.xcassets in Resources */,
+				796DAC0825154D1A00528250 /* AppPurchase.storekit in Resources */,
+				797D4EF92510FE0A00B74791 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6A473BAAC384458B81AD0E5A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Calmish/Pods-Calmish-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Calmish/Pods-Calmish-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Calmish/Pods-Calmish-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2E238320EFFAEC2B92AFB52 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Calmish-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		797D4EEB2510FE0700B74791 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				797D4EF32510FE0700B74791 /* AppDelegate.swift in Sources */,
+				7968B604251505F000BF697B /* PKDarkThemeView.swift in Sources */,
+				790D147025126FF100BAA12B /* PlaylistContentView.swift in Sources */,
+				790D146E25126B9700BAA12B /* RelaxContentView.swift in Sources */,
+				797D4F0D2511176F00B74791 /* AppConfig.swift in Sources */,
+				790D146C2512698B00BAA12B /* SoundsContentView.swift in Sources */,
+				797D4F19251177F600B74791 /* AppViewModel.swift in Sources */,
+				797D4F0F2511182900B74791 /* MeditationCategoryView.swift in Sources */,
+				797D4F1125115E8600B74791 /* CustomTabBarView.swift in Sources */,
+				797D4EF52510FE0700B74791 /* SceneDelegate.swift in Sources */,
+				7968B5EF2514FC8600BF697B /* FullScreenAds.swift in Sources */,
+				7968B607251513DB00BF697B /* MoreContentView.swift in Sources */,
+				797D4EF72510FE0700B74791 /* DashboardContentView.swift in Sources */,
+				797D4F162511771500B74791 /* AppManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		797D4EFD2510FE0A00B74791 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				797D4EFE2510FE0A00B74791 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		797D4F012510FE0A00B74791 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		797D4F022510FE0A00B74791 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		797D4F042510FE0A00B74791 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E21AD26298D4AF5C35B6B498 /* Pods-Calmish.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Calmish/Preview Content\"";
+				DEVELOPMENT_TEAM = JAPVDZ486H;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Calmish/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.a4w.Calmish;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		797D4F052510FE0A00B74791 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6440850AD4C4E9D78AA83F33 /* Pods-Calmish.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Calmish/Preview Content\"";
+				DEVELOPMENT_TEAM = JAPVDZ486H;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Calmish/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.a4w.Calmish;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		797D4EEA2510FE0700B74791 /* Build configuration list for PBXProject "Calmish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				797D4F012510FE0A00B74791 /* Debug */,
+				797D4F022510FE0A00B74791 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		797D4F032510FE0A00B74791 /* Build configuration list for PBXNativeTarget "Calmish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				797D4F042510FE0A00B74791 /* Debug */,
+				797D4F052510FE0A00B74791 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 797D4EE72510FE0700B74791 /* Project object */;
+}

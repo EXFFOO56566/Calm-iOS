@@ -1,0 +1,81 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Apps4World
+@_exported import Apps4World
+import Foundation
+import Swift
+import SwiftUI
+import UIKit
+import _AVKit_SwiftUI
+import _StoreKit_SwiftUI
+@objc @_inheritsConvenienceInitializers public class Calmish : ObjectiveC.NSObject {
+  public static let isLicenseVerified: Swift.Bool
+  public static func configure(purchaseCode code: Swift.String)
+  @objc deinit
+  @objc override dynamic public init()
+}
+@_hasMissingDesignatedInitializers public class ImageCache {
+  public func get(forKey: Swift.String) -> UIKit.UIImage?
+  public func set(forKey: Swift.String, image: UIKit.UIImage)
+  public static var localImages: [Swift.String : UIKit.UIImage]
+  public func loadImageFromDocumentDirectory(fileName: Swift.String) -> UIKit.UIImage?
+  @objc deinit
+}
+extension ImageCache {
+  public static func getImageCache() -> Apps4World.ImageCache
+}
+@objc @_inheritsConvenienceInitializers public class PlayerManager : ObjectiveC.NSObject {
+  public static var shared: Apps4World.PlayerManager
+  public var soundMP3Files: [Swift.String : Swift.String]
+  public func play(item: Swift.String)
+  public func stop()
+  @objc deinit
+  @objc override dynamic public init()
+}
+public class CategoryModel : Swift.Identifiable {
+  public var id: Swift.String
+  public var title: Swift.String
+  public var subtitle: Swift.String?
+  public init(id: Swift.String, title: Swift.String, subtitle: Swift.String?)
+  @objc deinit
+  public typealias ID = Swift.String
+}
+public typealias PKCompletionBlock = (((error: Swift.Error?, status: Apps4World.PKPurchaseStatus, productIdentifier: Swift.String)) -> Swift.Void)
+public enum PKPurchaseStatus : Swift.String {
+  case success, error, expired, restored, unsubscribed
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers public class PKManager : ObjectiveC.NSObject {
+  public static let shared: Apps4World.PKManager
+  public static var disclaimer: Swift.String
+  public var productIdentifiers: [Swift.String]
+  public var shouldShowLogs: Swift.Bool
+  public var isPremiumUser: Swift.Bool {
+    get
+    set
+  }
+  public class func loadProducts(identifiers: [Swift.String], showLogs: Swift.Bool = true)
+  public class func restorePurchases(completion: Apps4World.PKCompletionBlock? = nil)
+  public class func purchaseProduct(identifier: Swift.String, completion: Apps4World.PKCompletionBlock? = nil)
+  public class func formattedProductTitle(identifier: Swift.String) -> Swift.String
+  public class func productTitle(identifier: Swift.String) -> Swift.String
+  public class func productPrice(identifier: Swift.String) -> Swift.String
+  public class func present(theme: SwiftUI.AnyView, fromController controller: UIKit.UIViewController)
+  public class func dismissInAppPurchaseScreen()
+  @objc deinit
+  @objc override dynamic public init()
+}
+extension PKManager : StoreKit.SKPaymentTransactionObserver, StoreKit.SKProductsRequestDelegate {
+  @objc dynamic public func productsRequest(_ request: StoreKit.SKProductsRequest, didReceive response: StoreKit.SKProductsResponse)
+  @objc dynamic public func request(_ request: StoreKit.SKRequest, didFailWithError error: Swift.Error)
+  @objc dynamic public func paymentQueue(_ queue: StoreKit.SKPaymentQueue, restoreCompletedTransactionsFailedWithError error: Swift.Error)
+  @objc dynamic public func paymentQueueRestoreCompletedTransactionsFinished(_ queue: StoreKit.SKPaymentQueue)
+  @objc dynamic public func paymentQueue(_ queue: StoreKit.SKPaymentQueue, updatedTransactions transactions: [StoreKit.SKPaymentTransaction])
+}
+extension Apps4World.PKPurchaseStatus : Swift.Equatable {}
+extension Apps4World.PKPurchaseStatus : Swift.Hashable {}
+extension Apps4World.PKPurchaseStatus : Swift.RawRepresentable {}
